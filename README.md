@@ -1,2 +1,2 @@
 # OOAAD-25
-Mark Deegan Repository for Obkect Oriented Analysis and Design 2025
+Mark Deegan Repository for Object Oriented Analysis and Design 2025
