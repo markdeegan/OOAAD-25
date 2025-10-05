@@ -32,6 +32,8 @@ int main(int argc, char** argv)
 		/* contents of the argv[] array of strings */
 		for(int i=1; i< argc; i++) printf("\t%d: %s\n", i, argv[i]);
 	} /* end the block that is executed if arguments were supplied*/
-
+	/* exit the programme with the return code 0 */
+	/* indicating no errors */
+	return 0;
 }
 /* end definition of the main function */
