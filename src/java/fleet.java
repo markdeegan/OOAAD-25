@@ -19,6 +19,7 @@ public class fleet { // start definition of class fleet
 
 		System.out.println("myCar1 - My value is: " + myCar1.getValue());
 		System.out.println("myCar2 - My value is: " + (int)myCar2.getValue());
+		System.out.println("myCar2 - My reg is: " + myCar2.getRegistration());
 
 	} // end definition of main method in class fleet
 } // end definition of class fleet
