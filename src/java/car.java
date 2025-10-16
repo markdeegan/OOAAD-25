@@ -5,11 +5,12 @@
 
 /** @author Mark Deegan */
 public class car extends vehicle
+/** define class car */
 {
-	/** method to use the car horn */
 	public void beep()
+	/** method to use the car horn */
 	{
 		System.out.println("Beep! Beep!");
 	}
 }
-
+/** end definition of class car */
