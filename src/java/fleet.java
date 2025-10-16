@@ -1,11 +1,15 @@
-////////// ////////// ////////// //////////
-/// // Mark Deegan
-// Sat 11 Oct 2025 21:43:32 IST
-// programme to demonstrate use of inheritance and class hierarchy
-////////// ////////// ////////// //////////
-
-/** @author Mark Deegan */
+/** 
+* Mark Deegan<br>
+* Thu Oct 16 19:50:49 IST 2025.<br>
+* Class fleet to serve as a fleet manager.<br>
+* Using the car class and the vehicle class.<br>
+* @author Mark Deegan 
+* @version 1.0
+*/
 public class fleet { // start definition of class fleet
+	/** 
+	 * Main method for class Fleet.
+	*/
 	public static void main(String[] args)
 	{ // definition of main method in class fleet
 		System.out.println("Fleet Manager");

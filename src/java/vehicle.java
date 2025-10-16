@@ -1,10 +1,9 @@
-////////// ////////// ////////// //////////
-/// // Mark Deegan
-// Sat 11 Oct 2025 21:43:32 IST
-// programme to demonstrate use of inheritance and class hierarchy
-////////// ////////// ////////// //////////
-
-/** @author Mark Deegan */
+/** 
+* Mark Deegan<br>
+* Thu Oct 16 19:50:49 IST 2025 
+* @author Mark Deegan 
+* @version 1.0
+*/
 public class vehicle {
 	// declare private data members
 	// registration data members
