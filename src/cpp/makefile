@@ -48,3 +48,19 @@ clean:
 	@rm *.exe 2>/dev/null || true
 	@rm *.class 2>/dev/null || true
 
+c: hello.exe hello2.exe args1.exe args2.exe
+
+hello.exe: hello.c
+	gcc -o hello hello.c
+
+# build hello2.exe from hello.c, but using size optimisation
+hello2.exe: hello.c
+	gcc -s -o hello2 hello.c
+
+# build args1.exe from args1.c using optimisation
+args1.exe: args1.c
+	gcc -s -o args1.exe args1.c
+
+# build args2.exe from args2.c using optimisation
+args2.exe: args2.c
+	gcc -s -o args2.exe args2.c

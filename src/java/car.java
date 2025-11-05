@@ -1,30 +1,19 @@
-////////// ////////// ////////// //////////
-// Mark Deegan
-// Thu Oct 16 16:09:52 IST 2025
-// DTAI H3013 Object Oriented Analysis & Design
-////////// ////////// ////////// //////////
- 
- 
- 
 /** 
- * @author Mark Deegan 
- */
+* Mark Deegan<br>
+* Thu Oct 16 19:50:49 IST 2025 
+* @author <a href="mailto:mark.deegan@tudublin.ie">Mark Deegan</a>
+* @version 1.0
+*/
 public class car extends vehicle
-/** class to represent a car, which is an extension of or a 
- * specialisaiton of class vehicle */
-{ // start definition of the class car
-	String VIN;
-	public car()
-	{
-	}
-
-	public car(String paramVIN)
-	{
-		VIN = paramVIN;
-	}
+/** define class car */
+{
+	/** 
+	* Beep function to get the car to say hello.<br>
+	* I may want to move this to the vehicle class.
+	*/
 	public void beep()
-	/** public method beep to make the car sound the horn */
-	{ // end definition of method car::beep()
+	{
 		System.out.println("Beep! Beep!");
-	} // end definition of method cat::beep()
-} // end definition of the class car
+	}
+}
+/** end definition of class car */
