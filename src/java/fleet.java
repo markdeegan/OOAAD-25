@@ -1,42 +1,86 @@
-/** 
-* Mark Deegan<br>
-* Thu Oct 16 19:50:49 IST 2025.<br>
-* Class fleet to serve as a fleet manager.<br>
-* Using the car class and the vehicle class.<br>
-* @author Mark Deegan 
-* @version 1.0
-*/
+////////// ////////// ////////// //////////
+// Mark Deegan
+// Sat 11 Oct 2025 21:43:32 IST
+// programme to demonstrate use of inheritance and class hierarchy
+////////// ////////// ////////// //////////
+/** @author Mark Deegan */
+////////// ////////// ////////// //////////
+
+import java.util.Scanner;
+import java.io.File;
+import java.lang.Exception;
+
+
+/** Start definition of class fleet */
 public class fleet { // start definition of class fleet
-	/** 
-	 * Main method for class Fleet.
-	*/
+	// Start definition of method fleet::main() 
 	public static void main(String[] args)
-	{ // definition of main method in class fleet
+	{ // definition of fleet::main method
+
+		// print Fleet Manager message
 		System.out.println("Fleet Manager");
 
-		// declare two variables of class car
-		// and create the obejcts of class car
-		// assign the variables to the new objects
-		car myCar1 = new car();
-		car myCar2 = new car();
+		// declare two variables myCar1 and myCar2
+		car myCar1;
+		car myCar2;
 
-		// set the value of the car to €2,000
+		// crate two new car objects and assigne each one 
+		// to myCar1 or myCar2
+		myCar1 = new car();
+		myCar2 = new car();
+
+		// call the setValue funciton on the myCar1 object
 		myCar1.setValue(2000);
 
-		// print out a simnple message
+		// print a message
 		System.out.print("myCar1 says ");
-		// get the car to boop
+		// call the car::beep method on object myCar1
 		myCar1.beep();
 
-		// print out a simnple message
+		// print a message
 		System.out.print("myCar2 says ");
-		// get the car to boop
+		// call the car::beep function on onject myCar2
 		myCar2.beep();
 
-		// print diagnostic messages
+		// do the same thing as above, only
+		// call the function getValue within the println statement
 		System.out.println("myCar1 - My value is: " + myCar1.getValue());
 		System.out.println("myCar2 - My value is: " + (int)myCar2.getValue());
-		System.out.println("myCar2 - My reg is: " + myCar2.getRegistration());
+
+		// addMakesManually();
+		addMakesFromFile();
+
+		if(manufacturers.makes.contains("Mazda")) System.out.println("Mazda is present");
+		else System.out.println("Mazda is NOT present");
+		System.out.println("Full list of makes is :");
+		System.out.println(manufacturers.makes);
+
 
 	} // end definition of main method in class fleet
-} // end definition of class fleet
+
+static void addMakesManually()
+	{
+		manufacturers.makes.add("Mazda");
+		manufacturers.makes.add("Mazda");
+		manufacturers.makes.add("Maserati");
+		manufacturers.makes.add("BMW");
+		manufacturers.makes.add("Toyota");
+		manufacturers.makes.add("Hyundai");
+	}
+
+static void addMakesFromFile()
+	{
+	try
+		{
+		Scanner s = new Scanner(new File("list-of-makes.txt"));
+		while (s.hasNext()){
+    			manufacturers.makes.add(s.next());
+			}
+		s.close();
+		}
+	catch (Exception e)
+		{
+		}
+	}
+
+} 
