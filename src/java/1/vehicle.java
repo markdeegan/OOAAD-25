@@ -7,7 +7,11 @@
 public class vehicle {
 	// declare private data members
 	// registration data members
+	
+	String nameOfOwner;
 	private String VehicleIdentificationNumber;
+	protected String Address;
+	public String PPSNumber;
 
 	private int regYear = 99;
 	private String regCounty = "MH";
