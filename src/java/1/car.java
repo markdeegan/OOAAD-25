@@ -14,12 +14,10 @@ public class car extends vehicle
  * specialisaiton of class vehicle */
 { // start definition of the class car
 	String VIN;
+
 	public car()
-	{
-
-
-
-	}
+{
+}
 
 	public car(String paramVIN)
 	{

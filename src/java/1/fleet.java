@@ -30,22 +30,22 @@ public class fleet { // start definition of class fleet
 		myCar2 = new car();
 
 		// call the setValue funciton on the myCar1 object
-		myCar1.setValue(2000);
+//		myCar1.setValue(2000);
 
 		// print a message
-		System.out.print("myCar1 says ");
+//		System.out.print("myCar1 says ");
 		// call the car::beep method on object myCar1
-		myCar1.beep();
+//		myCar1.beep();
 
 		// print a message
-		System.out.print("myCar2 says ");
+//		System.out.print("myCar2 says ");
 		// call the car::beep function on onject myCar2
-		myCar2.beep();
+//		myCar2.beep();
 
 		// do the same thing as above, only
 		// call the function getValue within the println statement
-		System.out.println("myCar1 - My value is: " + myCar1.getValue());
-		System.out.println("myCar2 - My value is: " + (int)myCar2.getValue());
+//		System.out.println("myCar1 - My value is: " + myCar1.getValue());
+//		System.out.println("myCar2 - My value is: " + (int)myCar2.getValue());
 
 		// addMakesManually();
 		addMakesFromFile();
@@ -80,7 +80,9 @@ static void addMakesFromFile()
 		}
 	catch (Exception e)
 		{
+				System.err.println(e);
 		}
+
 	}
 
 } 
