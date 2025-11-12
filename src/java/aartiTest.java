@@ -18,7 +18,7 @@ public class aartiTest { // start definition of class aartiTest
 	{ // definition of aartiTest::main method
 
 		// print Fleet Manager message
-		System.out.println("Fleet Manager");
+		System.out.println("Aarti's Test");
 
 		// declare two variables myCar1 and myCar2
 		car myCar1;
