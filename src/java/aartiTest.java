@@ -30,7 +30,7 @@ public class aartiTest { // start definition of class aartiTest
 		myCar2 = new car();
 
 		// call the setValue funciton on the myCar1 object
-		myCar1.setValue(2000);
+		myCar1.setValue(100);
 
 		// print a message
 		System.out.print("Car 1 says: ");
