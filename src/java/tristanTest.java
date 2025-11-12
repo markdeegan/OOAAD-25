@@ -48,8 +48,13 @@ public class tristanTest { // start definition of class tristanTest
 		System.out.println("myCar2 - My value is: " + (int)myCar2.getValue());
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 		addMakesManually();
 		// addMakesFromFile();
+=======
+		//addMakesManually(); //from current file, hardcoded
+		addMakesFromFile(); //takes from seperate data file
+>>>>>>> Stashed changes
 =======
 		//addMakesManually(); //from current file, hardcoded
 		addMakesFromFile(); //takes from seperate data file
