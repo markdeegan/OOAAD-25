@@ -35,12 +35,12 @@ public class aartiTest { // start definition of class aartiTest
 		// print a message
 		System.out.print("Car 1 says: ");
 		// call the car::beep method on object myCar1
-		myCar1.beep();
+		myCar1.honk();
 
 		// print a message
 		System.out.print("Car 2 says: ");
 		// call the car::beep function on onject myCar2
-		myCar2.beep();
+		myCar2.honk();
 
 		// do the same thing as above, only
 		// call the function getValue within the println statement
