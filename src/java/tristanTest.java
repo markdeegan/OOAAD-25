@@ -47,8 +47,8 @@ public class tristanTest { // start definition of class tristanTest
 		System.out.println("myCar1 - My value is: " + myCar1.getValue());
 		System.out.println("myCar2 - My value is: " + (int)myCar2.getValue());
 
-		// addMakesManually();
-		addMakesFromFile();
+		addMakesManually();
+		// addMakesFromFile();
 
 		if(manufacturers.makes.contains("Mazda")) System.out.println("Mazda is present");
 		else System.out.println("Mazda is NOT present");
