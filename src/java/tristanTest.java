@@ -34,13 +34,13 @@ public class tristanTest { // start definition of class tristanTest
 
 		// print a message
 		System.out.print("myCar1 says ");
-		// call the car::beep method on object myCar1
-		myCar1.beep();
+		// call the car::honk method on object myCar1
+		myCar1.honk();
 
 		// print a message
 		System.out.print("myCar2 says ");
-		// call the car::beep function on onject myCar2
-		myCar2.beep();
+		// call the car::honk function on onject myCar2
+		myCar2.honk();
 
 		// do the same thing as above, only
 		// call the function getValue within the println statement
