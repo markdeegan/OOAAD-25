@@ -47,8 +47,13 @@ public class tristanTest { // start definition of class tristanTest
 		System.out.println("myCar1 - My value is: " + myCar1.getValue());
 		System.out.println("myCar2 - My value is: " + (int)myCar2.getValue());
 
+<<<<<<< Updated upstream
 		addMakesManually();
 		// addMakesFromFile();
+=======
+		//addMakesManually(); //from current file, hardcoded
+		addMakesFromFile(); //takes from seperate data file
+>>>>>>> Stashed changes
 
 		if(manufacturers.makes.contains("Mazda")) System.out.println("Mazda is present");
 		else System.out.println("Mazda is NOT present");
@@ -58,7 +63,7 @@ public class tristanTest { // start definition of class tristanTest
 
 	} // end definition of main method in class tristanTest
 
-static void addMakesManually()
+//static void addMakesManually()
 	{
 		manufacturers.makes.add("Mazda");
 		manufacturers.makes.add("Maserati");
