@@ -74,7 +74,7 @@ static void addMakesFromFile()
 		{
 		Scanner s = new Scanner(new File("list-of-makes.txt"));
 		while (s.hasNext()){
-    			manufacturers.makes.add(s.next());
+    			manufacturers.makes.add(s.nextLine());
 			}
 		s.close();
 		}
