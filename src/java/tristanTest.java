@@ -34,13 +34,13 @@ public class tristanTest { // start definition of class tristanTest
 
 		// print a message
 		System.out.print("myCar1 says ");
-		// call the car::honk method on object myCar1
-		myCar1.honk();
+		// call the car::beep method on object myCar1
+		myCar1.beep();
 
 		// print a message
 		System.out.print("myCar2 says ");
-		// call the car::honk function on onject myCar2
-		myCar2.honk();
+		// call the car::beep function on onject myCar2
+		myCar2.beep();
 
 		// do the same thing as above, only
 		// call the function getValue within the println statement
@@ -61,11 +61,11 @@ public class tristanTest { // start definition of class tristanTest
 static void addMakesManually()
 	{
 		manufacturers.makes.add("Mazda");
-		manufacturers.makes.add("Mazda");
 		manufacturers.makes.add("Maserati");
 		manufacturers.makes.add("BMW");
 		manufacturers.makes.add("Toyota");
 		manufacturers.makes.add("Hyundai");
+		manufacturers.makes.add("Kia");
 	}
 
 static void addMakesFromFile()
