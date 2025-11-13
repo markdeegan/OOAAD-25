@@ -1,0 +1,11 @@
+Kildare, KE
+Dublin, D
+Limerick, L
+Wicklow, WW
+Waterford, WD
+Cork, C
+Clare, CE 
+Cavan, CN
+Carlow, CW 
+Donegal, DL 
+Galway, G
