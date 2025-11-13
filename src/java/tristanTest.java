@@ -63,19 +63,16 @@ public class tristanTest {
         addModelsManually();
         addCountiesManually();
 
-        // list stored model data
         System.out.println("\nList of car models:");
-        for (String[] m : models) {
-            System.out.println(m[0] + " - " + m[1]);
+        for (CarModel m : models) {
+        System.out.println(m.make + " - " + m.model);
         }
 
-        // List stored county data
         System.out.println("\nList of counties:");
-        for (String[] c : counties) {
-            System.out.println(c[0] + " (" + c[1] + ")");
-        }
+        for (County c : counties) {
+        System.out.println(c.name + " (" + c.reg + ")");
 
-    } // end definition of main method in class tristanTest
+    }
 
     static void addMakesManually()
     {
@@ -99,8 +96,7 @@ public class tristanTest {
             s.close();
         }
         catch (Exception e)
-        {
-        }
+        
     }
 
     // manually add some make and models
@@ -122,4 +118,25 @@ public class tristanTest {
     }
 
 }
-///
+
+// dedicated class for car models
+class CarModel {
+    String make;
+    String model;
+
+    CarModel(String make, String model) {
+        this.make = make;
+        this.model = model;
+    }
+}
+
+// dedicated class for counties
+class County {
+    String name;
+    String reg;
+
+    County(String name, String reg) {
+        this.name = name;
+        this.reg = reg;
+    }
+}
