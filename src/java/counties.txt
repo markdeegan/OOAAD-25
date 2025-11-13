@@ -1,8 +1,8 @@
 Kildare, KE
 Dublin, D
 Limerick, L
-Wicklow, WW
-Waterford, WD
+Wicklow,WW
+Waterford,WD
 Cork, C
 Clare, CE 
 Cavan, CN
