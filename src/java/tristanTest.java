@@ -9,13 +9,15 @@
 import java.util.Scanner;
 import java.io.File;
 import java.lang.Exception;
+import java.util.ArrayList;
 
 
 // start definition of class tristanTest
 public class tristanTest { 
 
-    static java.util.ArrayList<String[]> models = new java.util.ArrayList<>(); // storage for make and model
-    static java.util.ArrayList<String[]> counties = new java.util.ArrayList<>(); // storage for county name and reg
+    static ArrayList<CarModel> models = new ArrayList<>(); 
+    
+    static ArrayList<County> counties = new ArrayList<>();  // storage for county name and reg
 
     // start definition of method tristanTest::main() 
     public static void main(String[] args) { // definition of tristanTest::main method
