@@ -37,13 +37,13 @@ public class tristanTest {
 
         // print a message
         System.out.print("myCar1 says ");
-        // call the car::honk method on object myCar1
-        myCar1.honk();
+        // call the car::beep method on object myCar1
+        myCar1.beep();
 
         // print a message
         System.out.print("myCar2 says ");
-        // call the car::honk function on onject myCar2
-        myCar2.honk();
+        // call the car::beep function on onject myCar2
+        myCar2.beep();
 
         // do the same thing as above, only
         // call the function getValue within the println statement
@@ -75,7 +75,7 @@ public class tristanTest {
 
     } // end definition of main method in class tristanTest
 
-    //static void addMakesManually()
+    static void addMakesManually()
     {
         manufacturers.makes.add("Mazda");
         manufacturers.makes.add("Maserati");
@@ -83,6 +83,7 @@ public class tristanTest {
         manufacturers.makes.add("Toyota");
         manufacturers.makes.add("Hyundai");
         manufacturers.makes.add("Kia");
+        manufacturers.makes.add("Nissan");
     }
 
     static void addMakesFromFile()
@@ -109,7 +110,7 @@ public class tristanTest {
         models.add(new String[]{"BMW", "X5"});
     }
 
-    // manually add some county/reg
+    // manually add some county and reg
     static void addCountiesManually() {
         counties.add(new String[]{"Kildare", "KE"});
         counties.add(new String[]{"Dublin", "D"});
