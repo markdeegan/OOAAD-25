@@ -90,7 +90,7 @@ static void addMakesManually()
 static void addMakesFromFile(){
 
 	try{
-		
+
 		Scanner s = new Scanner(new File("list-of-makes.txt"));
 		while (s.hasNext()){
     			manufacturers.makes.add(s.next());
@@ -126,7 +126,6 @@ class CarModel{
 	}
 
 }
-
 
 class County{
 	String name;
