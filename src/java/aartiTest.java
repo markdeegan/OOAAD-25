@@ -9,11 +9,15 @@
 import java.util.Scanner;
 import java.io.File;
 import java.lang.Exception;
-
+import java.util.ArrayList;
 
 /** Start definition of class aartiTest */
-public class aartiTest { // start definition of class aartiTest
-	// Start definition of method aartiTest::main() 
+public class aartiTest { 
+
+	static ArrayList<CarModel> models = new ArrayList<>();
+
+	static Arraylist<County> counties = new ArrayList<>();
+
 	public static void main(String[] args)
 	{ // definition of aartiTest::main method
 
@@ -47,13 +51,28 @@ public class aartiTest { // start definition of class aartiTest
 		System.out.println("Car 1 - My value is: " + myCar1.getValue());
 		System.out.println("Car 2 - My value is: " + (int)myCar2.getValue());
 
-		// addMakesManually();
+		addMakesManually();
 		addMakesFromFile();
 
 		if(manufacturers.makes.contains("BMW")) System.out.println("BMW is present");
 		else System.out.println("BMW is NOT present");
 		System.out.println("Full list of makes is :");
 		System.out.println(manufacturers.makes);
+
+		addModelsManually();
+		addCountiesManually();
+
+		System.out.println("/List of car models: ")
+		for (CarModel m: models) {
+		System.out.println(m.make + " (" + m.make +")")
+		}
+
+		System.out.println("/List of counties: ")
+		for (County c: counties) {
+		System.out.println(c.name + " (" + c.reg +")")
+
+
+		}
 
 
 	} // end definition of main method in class aartiTest
@@ -68,19 +87,53 @@ static void addMakesManually()
 		manufacturers.makes.add("Hyundai");
 	}
 
-static void addMakesFromFile()
-	{
-	try
-		{
+static void addMakesFromFile(){
+
+	try{
+		
 		Scanner s = new Scanner(new File("list-of-makes.txt"));
 		while (s.hasNext()){
     			manufacturers.makes.add(s.next());
-			}
+		}
 		s.close();
 		}
 	catch (Exception e)
-		{
-		}
+	
 	}
 
-} 
+static void addModels Manually() {
+	models.add(newstring[]{"Audi", "Q5"})
+	models.add(newstring[]{"Toyota", "RAV4"})
+	models.add(newstring[]{"Nissan", "Micra"})
+	models.add(newstring[]{"Honda", "Civic"})
+}
+
+
+static void addCounties Manually() {
+	counties.add(newstring[]{"Kerry", "KY"})
+	counties.add(newstring[]{"Clare", "CE"})
+	counties.add(newstring[]{"Longford", "LF"})
+	counties.add(newstring[]{"Sligo", "SL"})
+}
+
+class CarModel{
+	String make;
+	String model;
+
+	CarModel(String make, String model){
+		this.make = make;
+		this.model = model;
+	}
+
+}
+
+
+class County{
+	String name;
+	String reg;
+
+	County(String name, string reg){
+		this.name = name;
+		this.reg = reg;
+	}
+}
