@@ -1,0 +1,8 @@
+Mazda, Demio
+BMW, 520
+BMW, i3
+Ford, Fiesta
+Kia, Picanto
+Kia, Sportage
+Kia, Sorento
+Mazda, Mx5

@@ -64,3 +64,7 @@ args1.exe: args1.c
 # build args2.exe from args2.c using optimisation
 args2.exe: args2.c
 	gcc -s -o args2.exe args2.c
+
+# build the java documentation using javadoc
+docs:
+	javadoc -d ../../docs *.java -author -version
