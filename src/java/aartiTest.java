@@ -9,11 +9,17 @@
 import java.util.Scanner;
 import java.io.File;
 import java.lang.Exception;
-
+import java.util.ArrayList;
 
 /** Start definition of class aartiTest */
-public class aartiTest { // start definition of class aartiTest
-	// Start definition of method aartiTest::main() 
+public class aartiTest { 
+
+//List to store car models
+	static ArrayList<CarModel> models = new ArrayList<>();
+
+//List to store counties
+	static Arraylist<County> counties = new ArrayList<>();
+
 	public static void main(String[] args)
 	{ // definition of aartiTest::main method
 
@@ -47,7 +53,8 @@ public class aartiTest { // start definition of class aartiTest
 		System.out.println("Car 1 - My value is: " + myCar1.getValue());
 		System.out.println("Car 2 - My value is: " + (int)myCar2.getValue());
 
-		// addMakesManually();
+		//add car makes
+		addMakesManually();
 		addMakesFromFile();
 
 		if(manufacturers.makes.contains("BMW")) System.out.println("BMW is present");
@@ -55,9 +62,28 @@ public class aartiTest { // start definition of class aartiTest
 		System.out.println("Full list of makes is :");
 		System.out.println(manufacturers.makes);
 
+		//Add car models and counties
+		addModelsManually();
+		addCountiesManually();
+
+		//print all car models
+		System.out.println("/List of car models: ")
+		for (CarModel m: models) {
+		System.out.println(m.make + " (" + m.make +")")
+		}
+
+		//print all counties
+		System.out.println("/List of counties: ")
+		for (County c: counties) {
+		System.out.println(c.name + " (" + c.reg +")")
+
+
+		}
+
 
 	} // end definition of main method in class aartiTest
 
+//manually add car makes
 static void addMakesManually()
 	{
 		manufacturers.makes.add("Mazda");
@@ -68,19 +94,56 @@ static void addMakesManually()
 		manufacturers.makes.add("Hyundai");
 	}
 
-static void addMakesFromFile()
-	{
-	try
-		{
+//read car makes from file
+static void addMakesFromFile(){
+
+	try{
+
 		Scanner s = new Scanner(new File("list-of-makes.txt"));
 		while (s.hasNext()){
     			manufacturers.makes.add(s.next());
-			}
+		}
 		s.close();
 		}
 	catch (Exception e)
-		{
-		}
+	
 	}
 
-} 
+//manually add car models
+static void addModels Manually() {
+	models.add(newstring[]{"Audi", "Q5"})
+	models.add(newstring[]{"Toyota", "RAV4"})
+	models.add(newstring[]{"Nissan", "Micra"})
+	models.add(newstring[]{"Honda", "Civic"})
+}
+
+//manually add counties 
+static void addCounties Manually() {
+	counties.add(newstring[]{"Kerry", "KY"})
+	counties.add(newstring[]{"Clare", "CE"})
+	counties.add(newstring[]{"Longford", "LF"})
+	counties.add(newstring[]{"Sligo", "SL"})
+} //end class aartiTest
+
+// class represents a car model
+class CarModel{
+	String make;
+	String model;
+
+	CarModel(String make, String model){
+		this.make = make;
+		this.model = model;
+	}
+
+}
+
+//class represents a county
+class County{
+	String name;
+	String reg;
+
+	County(String name, string reg){
+		this.name = name;
+		this.reg = reg;
+	}
+}
