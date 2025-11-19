@@ -1,0 +1,11 @@
+{
+"students":[
+  {"firstName":"Tristan", "lastName":"Berns", "StudentNumber":"S12345"},
+  {"firstName":"Lara", "lastName":"Miller", "StudentNumber":"S67890"},
+  {"firstName":"Mohamed", "lastName":"Ali", "StudentNumber":"S54321"}
+],
+"lecturers":[
+  {"firstName":"Sarah", "lastName":"Johnson", "EmployeeID":"E98765"},
+  {"firstName":"David", "lastName":"Smith", "EmployeeID":"E43210"}
+]
+}
