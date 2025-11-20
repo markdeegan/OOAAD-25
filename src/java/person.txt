@@ -7,7 +7,7 @@
 // Place of Birth (DOB) - not changeable, is a set date
 
 //The constructor:
-//person(DOB, Place of Birth ) - asking for fixed data that can't be changed
+//person(DOB, Place of Birth) - asking for fixed data that can't be changed
 //not using person() because its an open constructor which would take no data in
 
 //The methods:
