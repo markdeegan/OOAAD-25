@@ -1,8 +1,8 @@
 //Create a class called Person
 
 //The data members will be:
-// givenName - people may change there name so we ask for the name from when they were first born because it is on there birth certificate
-// familyName - people may change there name so we ask for the name from when they were first born because it is on there birth certificate
+// givenName - people may change there name so we ask for the name from when they were first born that is on there birth certificate
+// familyName - people may change there name so we ask for the name from when they were first born that is on there birth certificate
 // Job - changeable data
 // Place of Birth (DOB) - not changeable, is a set date
 
