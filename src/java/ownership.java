@@ -1,15 +1,15 @@
 // Mark Deegan
 // Thu 20 Nov 2025 14:31:41 GMT
 
-import java.sql.Date;
+import java.time.LocalDate;
 
 public class ownership {
 	private person vehicleOwner;
 	private vehicle ownedVehicle;
-	private Date ownershipDate;
-	private Date NCTDueDate;
-	private Date insuranceDueDate;
-	private Date roadTaxDueDate;
+	private LocalDate ownershipDate;
+	private LocalDate NCTDueDate;
+	private LocalDate insuranceDueDate;
+	private LocalDate roadTaxDueDate;
 
 
 	ownership(){
@@ -22,7 +22,8 @@ public class ownership {
 		this.ownedVehicle = vehicle;
 	}
 
-	ownership(person owner, vehicle vehicle, Date ownershipDate, Date NCTDueDate, Date insuranceDueDate, Date roadTaxDueDate){
+	ownership(person owner, vehicle vehicle, LocalDate ownershipDate, LocalDate NCTDueDate, LocalDate insuranceDueDate, LocalDate roadTaxDueDate)
+	{
 		this.vehicleOwner = owner;
 		this.ownedVehicle = vehicle;
 		this.ownershipDate = ownershipDate;
@@ -47,16 +48,61 @@ public class ownership {
 		return this.ownedVehicle;
 	}	
 
+	public LocalDate getOwnershipDate() {
+		return this.ownershipDate;
+	}
+
+	public LocalDate getNCTDueDate() {
+		return this.NCTDueDate;
+	}	
+
+
+	public LocalDate getInsuranceDueDate() {
+		return this.insuranceDueDate;
+	}
+
+	public LocalDate getRoadTaxDueDate() {
+		return this.roadTaxDueDate;
+	}
+
+	public LocalDate setOwnershipDate(LocalDate ownershipDate) {
+		return this.ownershipDate = ownershipDate;
+	}	
+
+	public LocalDate setNCTDueDate(LocalDate NCTDueDate) {
+		return this.NCTDueDate = NCTDueDate;
+	}
+
+	public LocalDate setInsuranceDueDate(LocalDate insuranceDueDate) {
+		return this.insuranceDueDate = insuranceDueDate;
+	}	
+
+	public LocalDate setRoadTaxDueDate(LocalDate roadTaxDueDate) {
+		return this.roadTaxDueDate = roadTaxDueDate;
+	}	
+
+	public LocalDate extendNCTDueDate(int months) {
+		this.NCTDueDate = this.NCTDueDate.plusMonths(months);
+		return this.NCTDueDate;
+	}	
+
+
+
 	public static void main(String[] args) {
 		person alice = new person("Alice");
 		vehicle car = new vehicle();
 
 		ownership ownershipRecord = new ownership();
-		ownership ownershipRecord2 = new ownership(new person("Limerick"), new vehicle(), new Date(2020,1,1), new Date(2022,1,1), new Date(2022,6,1), new Date(2022,12,1));
+		ownership ownershipRecord2 = new ownership(new person("Limerick"), new vehicle(), LocalDate.of(2020,1,1), LocalDate.of(2026,4,21), LocalDate.of(2022,6,1), LocalDate.of(2026,5,12));
 
 		ownershipRecord.setOwner(alice);
 		ownershipRecord.setVehicle(car);
 
+		System.out.println("---------- ---------- ---------- ----------");
 		System.out.println(ownershipRecord.getOwner()+ " owns the following vehicle " + ownershipRecord.getVehicle());
+		System.out.println("---------- ---------- ---------- ----------");
+		System.out.println(ownershipRecord2.getOwner()+ " owns the following vehicle " + ownershipRecord2.getVehicle() + ": NCT Due Date: " + ownershipRecord2.getNCTDueDate());
+		System.out.println("---------- ---------- ---------- ----------");
 	}
 }
+
