@@ -6,7 +6,8 @@
 ## givenName - people may change there name so we ask for the name from when they were first born that is on there birth certificate
 ## familyName - people may change there name so we ask for the name from when they were first born that is on there birth certificate
 ## Job - data can change (DEPRECATED)
-## Place of Birth (DOB) - can't change, is a set date
+## Place of Birth - can't change, set data
+## Date of Birth - can't change, set data
 
 ## The behaviour:
 ## person(DOB, Place of Birth) - constructor asking for the data required
