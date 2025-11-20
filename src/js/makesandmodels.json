@@ -1,0 +1,9 @@
+{
+    "makes_and_models": {
+        "Toyota": ["Camry", "Corolla", "RAV4", "Prius"],
+        "Honda": ["Civic", "Accord", "CR-V", "Fit"],
+        "Ford": ["F-150", "Escape", "Mustang", "Explorer"],
+        "Chevrolet": ["Silverado", "Equinox", "Malibu", "Traverse"],
+        "BMW": ["3 Series", "5 Series", "X3", "X5"]
+    }
+}
