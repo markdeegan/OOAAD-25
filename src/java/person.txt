@@ -3,8 +3,8 @@
 //The data members will be:
 // givenName - people may change there name so we ask for the name from when they were first born that is on there birth certificate
 // familyName - people may change there name so we ask for the name from when they were first born that is on there birth certificate
-// Job - changeable data
-// Place of Birth (DOB) - not changeable, is a set date
+// Job - data can change
+// Place of Birth (DOB) - can't change, is a set date
 
 //The constructor:
 //person(DOB, Place of Birth) - asking for fixed data that can't be changed
