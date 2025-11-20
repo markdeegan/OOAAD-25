@@ -10,11 +10,12 @@
 ## Date of Birth - can't change, set data
 
 ## The behaviour:
-## person(DOB, Place of Birth) - constructor asking for the data required
+## person(DOB, Place of Birth, givenName, familyName) - constructor asking for the data required
 ## not using person() because its an open constructor which would take no data in
 
 ## The methods:
-## getName() - gets name 
-## getDOB() - gets date of birth 
+## getGivenName() - gets given name (Read Only)
+## getFamilyName() - gets family name (Read Only)
+## getDOB() - gets date of birth (Read Only)
 ## setDOB() - sets date of birth (can't change) (DEPRECATED)
 ## setName() - sets name (can change in certain limited circumstances)
