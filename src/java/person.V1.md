@@ -10,7 +10,7 @@
 ## Date of Birth - can't change, set data
 
 ## The behaviour:
-## person(DOB, Place of Birth) - constructor asking for the data required
+## person(DOB, Place of Birth, givenName, familyName) - constructor asking for the data required
 ## not using person() because its an open constructor which would take no data in
 
 ## The methods:
