@@ -1,4 +1,4 @@
-import java.util.Date;
+import java.sql.Date;
 
 public class person {
    private String placeOfBirth;
@@ -7,9 +7,8 @@ public class person {
     private String familyName;
 
 
-    public person(String pob, Date dob) {
+    public person(String pob) {
         this.placeOfBirth = pob;
-        this.dateOfBirth = dob;
     }
 
     public String getGivenName() {
@@ -19,7 +18,10 @@ public class person {
         return familyName;
     }
 
-    public Date getDOB() {
-        return dateOfBirth;
-    }
+    public static void main(String[] args) {
+        // Example usage
+        person p = new person("New York"); // 
+        System.out.println("Place of Birth: " + p.placeOfBirth);
+    }   
 }
+
