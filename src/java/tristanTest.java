@@ -20,6 +20,7 @@ public class tristanTest {
     static ArrayList<County> counties = new ArrayList<>();  // storage for county name and reg
 
     // start definition of method tristanTest::main() 
+}
     public static void main(String[] args) { // definition of tristanTest::main method
 
         // print Fleet Manager message
@@ -139,4 +140,5 @@ class County {
         this.name = name;
         this.reg = reg;
     }
+}
 }
