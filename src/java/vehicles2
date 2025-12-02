@@ -1,0 +1,25 @@
+# vehicle V2
+# owner: Tristan Berns
+# 28/11/25
+# DTAI Y3
+# Object Oriented Analysis and Design 
+## purpose: To define the structure, needed data and behaviours of the vehicle class.
+## Attributes and methods are described, including what can and can't change.
+
+
+Vehicle types
+--------------------------------------------------------------------------------------------------------------------
+LandVehicle
+ATV Car CombineHarvester DirtBike DuneBuggy Lorry Moped Motorbike Tractor QuadBike GoKart Snowmobile
+roadvehicle: - Car Lorry Moped Motorbike GoKart
+--------------------------------------------------------------------------------------------------------------------
+WaterVehicle
+PoweredWaterVehicle: - Submarine ContainerShip CruiseShip Jetski SurfaceBoat SpeedBoat Yacht Ferry
+NonPoweredWaterVehicle: - Sailboat Kayak Canoe PaddleBoat
+--------------------------------------------------------------------------------------------------------------------
+AirVehicle
+PoweredAirVehicle: - AirPlane Drone Helicopter Jet
+NonPoweredAirVehicle: - ParaGlider Wingsuit HotAirBalloon 
+--------------------------------------------------------------------------------------------------------------------
+
+
