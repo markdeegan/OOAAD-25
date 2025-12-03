@@ -124,3 +124,7 @@ HotAirBalloon: javac -d ../bin/ HotAirBalloon.java
 ------------------------------------------------------------------------------------------------------------------------------------
 
 ####################################################################################################################################
+
+
+#added a few new vehicles to each class. Took out previous military type to focus on the core 3 types (land air and water)
+#focus on organising land types further by arranging the hierarchy to allign with air and water (powered and non powered)
