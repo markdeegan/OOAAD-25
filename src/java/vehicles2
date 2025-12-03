@@ -23,3 +23,14 @@ NonPoweredAirVehicle: - ParaGlider Wingsuit HotAirBalloon
 --------------------------------------------------------------------------------------------------------------------
 
 
+--------------------------------------------------------------------------------------------------------------------
+# The vehicle hierarchy groups different types of transport into diffeent categories that can be represented using classes and inheritance. At the highest level, vehicles are divided into land, water, and air types. Land vehicles include vehicles such as ATVs, dirtbike, combine harvesters, etc. With a smaller subgroup called road vehicles made up of cars, lorries, mopeds, motorbikes, and gokarts.
+
+# Water vehicles are separated into powered types such as submarines, container ships, cruise ships, etc. and non-powered types such as sailboats, kayaks, canoes, and paddle boats.
+
+# Air vehicles follow the same pattern, with powered aircraft including airplanes, drones, helicopters, and jets, and non powered aircraft including paragliders, wingsuits, and hotair balloons.
+
+# These structures help organise classes and create clear inheritance relationships in basic easy to understand english across different vehicle groups before adding the coding level.
+
+# Future versions will work on organising land types further by arranging the hierarchy similar to air and water (powered and non powered)
+--------------------------------------------------------------------------------------------------------------------

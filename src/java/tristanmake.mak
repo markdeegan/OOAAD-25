@@ -6,19 +6,21 @@
 
 Categories
 ----------------------
-all: land water air military
+all: land water air				#every vehicle type category: land, water, air
+
 ----------------------
-Clean
+Clean							
 ----------------------
-clean: rm -f ../bin/*.class
+clean: rm -f ../bin/*.class		#removes all compiled .class files from bin directory
 
 ####################################################################################################################################
 ------------------------------------------------------------------------------------------------------------------------------------
 Land Vehicles
 ------------------------------------------------------------------------------------------------------------------------------------
-
+#all land related vehicle classes, including road vehicles
 land: LandVehicle ATV Car CombineHarvester DirtBike DuneBuggy Lorry Moped Motorbike Tractor QuadBike GoKart Snowmobile roadvehicle
 
+#compiles a Java source file into the bin directory
 LandVehicle: javac -d ../bin/ LandVehicle.java
 
 ATV: javac -d ../bin/ ATV.java
@@ -45,19 +47,23 @@ GoKart: javac -d ../bin/ GoKart.java
 
 Snowmobile: javac -d ../bin/ Snowmobile.java
 
+#road vehicle group depends on these classes
 roadvehicle: Car Lorry Moped Motorbike GoKart
 
+#compiles the base RoadVehicle class
 RoadVehicle: javac -d ../bin/ RoadVehicle.java
 
 
 ------------------------------------------------------------------------------------------------------------------------------------
 Water Vehicles
 ------------------------------------------------------------------------------------------------------------------------------------
-
+#all water related vehicle classes
 water: WaterVehicle PoweredWaterVehicle NonPoweredWaterVehicle
 
+#base water vehicle class
 WaterVehicle: javac -d ../bin/ WaterVehicle.java
 
+#powered water vehicle group depends on these classes
 PoweredWaterVehicle: Submarine ContainerShip CruiseShip Jetski SurfaceBoat SpeedBoat Yacht Ferry
 
 Submarine: javac -d ../bin/ Submarine.java
@@ -76,6 +82,7 @@ Yacht: javac -d ../bin/ Yacht.java
 
 Ferry: javac -d ../bin/ Ferry.java
 
+#non powered water vehicle group depends on these classes
 NonPoweredWaterVehicle: Sailboat Kayak Canoe PaddleBoat
 
 Sailboat: javac -d ../bin/ Sailboat.java
@@ -89,11 +96,12 @@ PaddleBoat: javac -d ../bin/ PaddleBoat.java
 ------------------------------------------------------------------------------------------------------------------------------------
 Air Vehicles
 ------------------------------------------------------------------------------------------------------------------------------------
-
+#all air related vehicle classes
 air: AirVehicle PoweredAirVehicle NonPoweredAirVehicle
 
 AirVehicle: javac -d ../bin/ AirVehicle.java
 
+#powered air vehicle group depends on these classes
 PoweredAirVehicle: AirPlane Drone Helicopter Jet
 
 AirPlane: javac -d ../bin/ AirPlane.java
@@ -104,6 +112,7 @@ Helicopter: javac -d ../bin/ Helicopter.java
 
 Jet: javac -d ../bin/ Jet.java
 
+#non powered air vehicle group depends on these classes
 NonPoweredAirVehicle: ParaGlider Wingsuit HotAirBalloon
 
 ParaGlider: javac -d ../bin/ ParaGlider.java
@@ -113,17 +122,5 @@ Wingsuit: javac -d ../bin/ Wingsuit.java
 HotAirBalloon: javac -d ../bin/ HotAirBalloon.java
 
 ------------------------------------------------------------------------------------------------------------------------------------
-Military Vehicles
-------------------------------------------------------------------------------------------------------------------------------------
-
-military: MilitaryVehicle Tank ArmouredVehicle AttackHelicopter
-
-MilitaryVehicle: javac -d ../bin/ MilitaryVehicle.java
-
-Tank: javac -d ../bin/ Tank.java
-
-ArmouredVehicle: javac -d ../bin/ ArmouredVehicle.java
-
-AttackHelicopter: javac -d ../bin/ AttackHelicopter.java
 
 ####################################################################################################################################
