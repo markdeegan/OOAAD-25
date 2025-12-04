@@ -1,6 +1,6 @@
 import java.sql.Date;                               // imports the Date class for storing the date of birth
 
-public class person {                               // sefines person class
+public class person {                               // defines person class
    private String placeOfBirth;                     // stores where the person was born (doesn't change)
    private Date dateOfBirth;                        // stores the person's date of birth (doesn't change)
    private String givenName;                        // stores the person's given/birth name
