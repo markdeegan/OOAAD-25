@@ -5,25 +5,22 @@
 # Object Oriented Analysis and Design
 # Makefile to compile all vehicle related Java classes into the bin directory
 
-#added a few new vehicles to each class. Took out previous military type to focus on the core 3 types (land air and water)
-#focus on organising land types further by arranging the hierarchy to allign with air and water (powered and non powered)
 
-#updated makefile to sort land vehicles into powered, non powered, road vehicles and all terrain vehicles (atv)
-
-Categories
-----------------------
+# Categories
+# ----------------------
 all: land water air				#every vehicle type category: land, water, air
 
-----------------------
-Clean							
-----------------------
+
+# Clean							
+# ----------------------
 clean:							#removes all compiled .class files from bin directory
 	rm -f ../bin/*.class
 
+
 ####################################################################################################################################
-------------------------------------------------------------------------------------------------------------------------------------
-Land Vehicles
-------------------------------------------------------------------------------------------------------------------------------------
+# ----------------------------------------------------------------------------------------------------------------------------------
+# Land Vehicles
+# ----------------------------------------------------------------------------------------------------------------------------------
 #all land related vehicle classes, grouped by powered, nonpowered, road vehicles, and all terrain vehicles (atv)
 land: LandVehicle PoweredLandVehicle NonPoweredLandVehicle roadvehicle atvgroup RoadVehicle
 
@@ -85,9 +82,10 @@ DuneBuggy:
 Snowmobile:
 	javac -d ../bin/ Snowmobile.java
 
-------------------------------------------------------------------------------------------------------------------------------------
-Water Vehicles
-------------------------------------------------------------------------------------------------------------------------------------
+
+# ----------------------------------------------------------------------------------------------------------------------------------
+# Water Vehicles
+# ----------------------------------------------------------------------------------------------------------------------------------
 #all water related vehicle classes
 water: WaterVehicle PoweredWaterVehicle NonPoweredWaterVehicle
 
@@ -137,9 +135,10 @@ Canoe:
 PaddleBoat:
 	javac -d ../bin/ PaddleBoat.java
 
-------------------------------------------------------------------------------------------------------------------------------------
-Air Vehicles
-------------------------------------------------------------------------------------------------------------------------------------
+
+# ----------------------------------------------------------------------------------------------------------------------------------
+# Air Vehicles
+# ----------------------------------------------------------------------------------------------------------------------------------
 #all air related vehicle classes
 air: AirVehicle PoweredAirVehicle NonPoweredAirVehicle
 
@@ -173,5 +172,11 @@ Wingsuit:
 HotAirBalloon:
 	javac -d ../bin/ HotAirBalloon.java
 
-------------------------------------------------------------------------------------------------------------------------------------
 ####################################################################################################################################
+
+
+#added a few new vehicles to each class. Took out previous military type to focus on the core 3 types (land air and water)
+#focus on organising land types further by arranging the hierarchy to allign with air and water (powered and non powered)
+
+#updated makefile to sort land vehicles into powered, non powered, road vehicles and all terrain vehicles (atv)
+#tidied up comments and structure for better readability
