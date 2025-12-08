@@ -1,0 +1,60 @@
+//# Car.java (1) tristanmake.mak - vehicle V2 makefile
+//# owner: Tristan Berns
+//# 08/12/25
+//# DTAI Y3
+//# Object Oriented Analysis and Design
+//# attempting to create a car class
+
+public class Car extends LandVehicle {
+
+    //the manufacturer of the car (e.g., Toyota, Ford)
+    private String make;
+
+    //the specific model of the car (e.g., Camry, Mustang)
+    private String model;
+
+    //registration number (231-D-12345)
+    private String licensePlate;
+
+    //colour of the vehicle
+    private String colour;
+
+    //unique 17 character Vehicle Identification Number (VIN)
+    private String vin;
+
+    //constructor that creates a new Car object. It sets all important details that describe the car.
+    public Car(String make, String model, String licensePlate, String colour, String vin) {
+        this.make = make;                     //assign manufacturer
+        this.model = model;                   //assign model name
+        this.licensePlate = licensePlate;     //assign Irish reg
+        this.colour = colour;                 //assign car colour
+        this.vin = vin;                       //assign VIN number
+
+        System.out.println("Car created: " + make + " " + model);
+    }
+
+
+    // ----------------------------
+    // Getter methods (read only)
+    // ----------------------------
+
+    public String getMake() {                //returns the car's manufacturer
+        return make;
+    }
+
+    public String getModel() {               //returns the car model
+        return model;
+    }
+
+    public String getLicensePlate() {        //returns the Irish license plate
+        return licensePlate;
+    }
+
+    public String getColour() {              //returns the vehicle colour
+        return colour;
+    }
+
+    public String getVin() {                 //returns the vehicle's VIN
+        return vin;
+    }
+}
