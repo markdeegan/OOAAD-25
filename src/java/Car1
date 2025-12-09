@@ -1,0 +1,37 @@
+//# Car.java (1) tristanmake.mak - vehicle V2 makefile
+//# owner: Tristan Berns
+//# 08/12/25
+//# DTAI Y3
+//# Object Oriented Analysis and Design
+//# attempting to create a car class
+//# powered road vehicle and inherits from RoadVehicle.
+
+public class Car extends RoadVehicle {
+
+    private String make;          //manufacturer (Toyota, Ford, etc.)
+    private String model;         //model name (Camry, X5, etc.)
+    private String licensePlate;  //Irish plate (231-KE-12345)
+    private String colour;        //exterior colour
+    private String vin;           //unique vehicle ID number
+
+    //creates a car with all standard descriptive details
+    public Car(String make, String model, String licensePlate,
+               String colour, String vin) {
+
+        super(4, 120);            //wheel count = 4, typical speed = 120km/h
+        this.make = make;
+        this.model = model;
+        this.licensePlate = licensePlate;
+        this.colour = colour;
+        this.vin = vin;
+
+        System.out.println("Car created: " + make + " " + model);
+    }
+
+    public String getMake() { return make; }
+    public String getModel() { return model; }
+    public String getLicensePlate() { return licensePlate; }
+    public String getColour() { return colour; }
+    public String getVin() { return vin; }
+}
+
