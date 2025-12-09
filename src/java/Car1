@@ -4,57 +4,34 @@
 //# DTAI Y3
 //# Object Oriented Analysis and Design
 //# attempting to create a car class
+//# powered road vehicle and inherits from RoadVehicle.
 
-public class Car extends LandVehicle {
+public class Car extends RoadVehicle {
 
-    //the manufacturer of the car (e.g., Toyota, Ford)
-    private String make;
+    private String make;          //manufacturer (Toyota, Ford, etc.)
+    private String model;         //model name (Camry, X5, etc.)
+    private String licensePlate;  //Irish plate (231-KE-12345)
+    private String colour;        //exterior colour
+    private String vin;           //unique vehicle ID number
 
-    //the specific model of the car (e.g., Camry, Mustang)
-    private String model;
+    //creates a car with all standard descriptive details
+    public Car(String make, String model, String licensePlate,
+               String colour, String vin) {
 
-    //registration number (231-D-12345)
-    private String licensePlate;
-
-    //colour of the vehicle
-    private String colour;
-
-    //unique 17 character Vehicle Identification Number (VIN)
-    private String vin;
-
-    //constructor that creates a new Car object. It sets all important details that describe the car.
-    public Car(String make, String model, String licensePlate, String colour, String vin) {
-        this.make = make;                     //assign manufacturer
-        this.model = model;                   //assign model name
-        this.licensePlate = licensePlate;     //assign Irish reg
-        this.colour = colour;                 //assign car colour
-        this.vin = vin;                       //assign VIN number
+        super(4, 120);            //wheel count = 4, typical speed = 120km/h
+        this.make = make;
+        this.model = model;
+        this.licensePlate = licensePlate;
+        this.colour = colour;
+        this.vin = vin;
 
         System.out.println("Car created: " + make + " " + model);
     }
 
-
-    // ----------------------------
-    // Getter methods (read only)
-    // ----------------------------
-
-    public String getMake() {                //returns the car's manufacturer
-        return make;
-    }
-
-    public String getModel() {               //returns the car model
-        return model;
-    }
-
-    public String getLicensePlate() {        //returns the Irish license plate
-        return licensePlate;
-    }
-
-    public String getColour() {              //returns the vehicle colour
-        return colour;
-    }
-
-    public String getVin() {                 //returns the vehicle's VIN
-        return vin;
-    }
+    public String getMake() { return make; }
+    public String getModel() { return model; }
+    public String getLicensePlate() { return licensePlate; }
+    public String getColour() { return colour; }
+    public String getVin() { return vin; }
 }
+
