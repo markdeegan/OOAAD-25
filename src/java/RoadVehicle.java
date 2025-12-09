@@ -1,11 +1,11 @@
-//# Car.java (1) tristanmake.mak - vehicle V2 makefile
+//# RoahVehicle.java tristanmake.mak - vehicle V2 makefile
 //# owner: Tristan Berns
 //# 09/12/25
 //# DTAI Y3
 //# Object Oriented Analysis and Design
 //# attempt to create a RoadVehicle class
 //# RoadVehicle is a subclass of LandVehicle
-//# examples include cars, mopeds, motorbikes, lorries, and gokarts.
+//# examples include cars, mopeds, motorbikes, lorries, and gokarts
 
 public class RoadVehicle extends LandVehicle {
 
