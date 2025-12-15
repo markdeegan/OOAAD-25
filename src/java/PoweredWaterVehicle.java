@@ -8,7 +8,8 @@
 
 public class PoweredWaterVehicle extends WaterVehicle {
 
-    public PoweredWaterVehicle() {
+    public PoweredWaterVehicle(int maxSpeed, double weight) {
+        super(maxSpeed, weight);
         System.out.println("PoweredWaterVehicle created.");
     }
 }
